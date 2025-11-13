@@ -1,12 +1,12 @@
 /* Root Variables for Easy Theme Management */
 :root {
-  --primary-color: #5e3200;
-  --secondary-color: #ffbe6f;
-  --accent-color: #ff8c00;
-  --bg-color: #ffb20c;
-  --section-bg: #a06000;
+  --primary-color: #1e3a8a;
+  --secondary-color: #60a5fa;
+  --accent-color: #3b82f6;
+  --bg-color: #dbeafe;
+  --section-bg: #2563eb;
   --text-color: #ffffff;
-  --footer-bg: #372600;
+  --footer-bg: #1e40af;
   --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   --transition-speed: 0.3s;
   --border-radius: 8px;
