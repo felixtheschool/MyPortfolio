@@ -1,12 +1,12 @@
 /* Root Variables for Easy Theme Management */
 :root {
-  --primary-color: #1e3a8a;
-  --secondary-color: #60a5fa;
-  --accent-color: #3b82f6;
-  --bg-color: #dbeafe;
-  --section-bg: #2563eb;
+  --primary-color: #854d0e;
+  --secondary-color: #fbbf24;
+  --accent-color: #d97706;
+  --bg-color: #fef3c7;
+  --section-bg: #ca8a04;
   --text-color: #ffffff;
-  --footer-bg: #1e40af;
+  --footer-bg: #92400e;
   --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   --transition-speed: 0.3s;
   --border-radius: 8px;
@@ -15,13 +15,13 @@
 
 /* Dark Mode Variables */
 body.dark-mode {
-  --primary-color: #1a1a2e;
-  --secondary-color: #16213e;
-  --accent-color: #0f3460;
-  --bg-color: #0f0f1e;
-  --section-bg: #1a1a2e;
-  --text-color: #e4e4e4;
-  --footer-bg: #16213e;
+  --primary-color: #1a1410;
+  --secondary-color: #f59e0b;
+  --accent-color: #d97706;
+  --bg-color: #1c1810;
+  --section-bg: #78350f;
+  --text-color: #fef3c7;
+  --footer-bg: #451a03;
 }
 
 /* Base Styles */
