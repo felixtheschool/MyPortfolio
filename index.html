@@ -3,73 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syed, Abdul Moeed Hadi</title>
+    <meta name="description" content="Abdul Moeed Hadi - Web Developer Portfolio showcasing innovative projects and skills">
+    <title>Syed, Abdul Moeed Hadi - Web Developer Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">↑</button>
+    
     <header>
-        <header>
-         <h1 style="font-style: oblique;">Welcome to my Portfolio Website</h1>
-         <p> <font color="#ffffff">Created by <b>Abdul Moeed</b></font></p>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+        <h1 class="header-title animate-on-scroll">Welcome to my Portfolio Website</h1>
+        <p class="header-subtitle">Created by <strong>Abdul Moeed Hadi</strong></p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
     <main>
-        <p>
-        <section>
-             <div id="about">
-            <h2>About</h2>
-            <p>Hey there, I'm Hadi, a passionate web developer with a knack for creating engaging and user-friendly websites. With a background in computer science and a love for design, I strive to blend functionality with aesthetics in every project I undertake.</p>
-            <p>I enjoy working on innovative projects that challenge my skills and push the boundaries of what's possible on the web.</p>
-            <p>When I'm not coding, you can find me exploring the latest tech trends, contributing to open-source projects, or indulging in my hobby of digital art.
-            <p>There are 2 projects im currently working on which are mentioned in the projects section below.
-                
-            </p>
+        <section id="about" class="animate-on-scroll">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Hey there, I'm <strong>Hadi</strong>, a passionate web developer with a knack for creating engaging and user-friendly websites. With a background in computer science and a love for design, I strive to blend functionality with aesthetics in every project I undertake.</p>
+                <p>I enjoy working on innovative projects that challenge my skills and push the boundaries of what's possible on the web. My expertise spans across front-end development, with a focus on creating responsive, accessible, and performant web applications.</p>
+                <p>When I'm not coding, you can find me exploring the latest tech trends, contributing to open-source projects, or indulging in my hobby of digital art. I'm always eager to learn new technologies and improve my craft.</p>
+                <p>Currently, I'm working on several exciting projects including language learning platforms and financial technology solutions that aim to make a positive impact on users' lives.</p>
             </div>
         </section>
-        </div>
         
-        <section>
-            <div id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>1 - Bix+
-                    <p>A project to help engage users to learn the Arabic language from English and vice versa through interactive lessons and quizzes. It is functionally based, meaning you will learn the colloquial Arabic dialect in a practical context. </p>
-                    <p>This is to engage clients in a more interactive and effective learning experience. </p>
-                </li>
-                <li>2 - CUSP</li>
-                <p>A web-based platform for trading stocks and cryptocurrencies, featuring real-time market data, advanced charting tools, and a user-friendly interface.</p>
-                <p>This project aims to simplify the trading process and make it accessible to a wider audience.</p>
-            </ul>
+        <section id="skills" class="animate-on-scroll">
+            <h2>Skills & Technologies</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Front-End</h3>
+                    <ul class="skill-list">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React.js</li>
+                        <li>Responsive Design</li>
+                        <li>CSS Animations</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Workflow</h3>
+                    <ul class="skill-list">
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>Chrome DevTools</li>
+                        <li>NPM/Yarn</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Core Competencies</h3>
+                    <ul class="skill-list">
+                        <li>Web Performance</li>
+                        <li>Accessibility (a11y)</li>
+                        <li>UI/UX Design</li>
+                        <li>Problem Solving</li>
+                        <li>Agile Development</li>
+                    </ul>
+                </div>
             </div>
         </section>
-        <section>
-            <div id="contact">
-            <h2>Contact</h2>
-            <p>If you would like to get in touch with me, please fill out the contact form below:</p>
-                <form action="mailto:hadi@profetix.com" method="post" enctype="text/plain" class="contact-form">
-                  <label for="name">Name</label><br>
-                  <input id="name" name="Name" type="text" required><br><br>
 
-                  <label for="email">Email</label><br>
-                  <input id="email" name="Email" type="email" required><br><br>
+        <section id="projects" class="animate-on-scroll">
+            <h2>My Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                <button class="filter-btn" data-filter="react">React</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-item" data-category="web">
+                    <div class="project-header">
+                        <h3>Bix+</h3>
+                        <span class="project-tag">Language Learning</span>
+                    </div>
+                    <p class="project-description">An innovative language learning platform designed to help users master Arabic from English and vice versa through interactive lessons and quizzes. The platform focuses on functional, colloquial Arabic dialects taught in practical, real-world contexts.</p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Interactive lesson modules with audio pronunciation</li>
+                            <li>Gamified quiz system with progress tracking</li>
+                            <li>Context-based learning scenarios</li>
+                            <li>Personalized learning paths</li>
+                        </ul>
+                    </div>
+                    <p class="project-impact">This project aims to bridge language barriers and provide an engaging, effective learning experience for Arabic language enthusiasts.</p>
+                    <div class="project-tech">
+                        <strong>Technologies:</strong> HTML5, CSS3, JavaScript, Local Storage
+                    </div>
+                </div>
 
-                  <label for="subject">Subject</label><br>
-                  <input id="subject" name="Subject" type="text"><br><br>
+                <div class="project-item" data-category="javascript">
+                    <div class="project-header">
+                        <h3>CUSP</h3>
+                        <span class="project-tag">FinTech</span>
+                    </div>
+                    <p class="project-description">A comprehensive web-based trading platform for stocks and cryptocurrencies, featuring real-time market data, advanced charting tools, and an intuitive user interface designed for both beginners and experienced traders.</p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Real-time market data and price updates</li>
+                            <li>Advanced charting with technical indicators</li>
+                            <li>Portfolio management and tracking</li>
+                            <li>Watchlist and alerts system</li>
+                            <li>Responsive design for mobile trading</li>
+                        </ul>
+                    </div>
+                    <p class="project-impact">CUSP democratizes trading by making sophisticated financial tools accessible to everyone, simplifying complex processes with an elegant interface.</p>
+                    <div class="project-tech">
+                        <strong>Technologies:</strong> JavaScript, Chart.js, REST APIs, CSS Grid
+                    </div>
+                </div>
 
-                  <label for="message">Message</label><br>
-                  <textarea id="message" name="Message" rows="6" required></textarea><br><br>
+                <div class="project-item" data-category="web">
+                    <div class="project-header">
+                        <h3>Portfolio Website</h3>
+                        <span class="project-tag">Personal Project</span>
+                    </div>
+                    <p class="project-description">A modern, responsive portfolio website showcasing my skills, projects, and professional journey. Features smooth animations, dark mode, and optimized performance.</p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Dark mode toggle with localStorage persistence</li>
+                            <li>Smooth scrolling navigation</li>
+                            <li>Project filtering system</li>
+                            <li>Responsive design across all devices</li>
+                            <li>Lazy loading for optimal performance</li>
+                        </ul>
+                    </div>
+                    <p class="project-impact">Demonstrates proficiency in modern web development practices and attention to user experience details.</p>
+                    <div class="project-tech">
+                        <strong>Technologies:</strong> HTML5, CSS3, Vanilla JavaScript, Git
+                    </div>
+                </div>
 
-                  <button type="submit">Send Message</button>
+                <div class="project-item" data-category="react">
+                    <div class="project-header">
+                        <h3>Task Manager Pro</h3>
+                        <span class="project-tag">Productivity</span>
+                    </div>
+                    <p class="project-description">A full-featured task management application built with React, helping users organize their daily activities with categories, priorities, and deadlines.</p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Drag-and-drop task organization</li>
+                            <li>Priority levels and due dates</li>
+                            <li>Category-based filtering</li>
+                            <li>Progress tracking and statistics</li>
+                            <li>Local data persistence</li>
+                        </ul>
+                    </div>
+                    <p class="project-impact">Helps users stay organized and productive with an intuitive, feature-rich interface.</p>
+                    <div class="project-tech">
+                        <strong>Technologies:</strong> React, React Hooks, CSS Modules, localStorage API
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="animate-on-scroll">
+            <h2>Get In Touch</h2>
+            <p class="contact-intro">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!</p>
+            
+            <div class="contact-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name <span class="required">*</span></label>
+                        <input id="name" name="Name" type="text" placeholder="Your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input id="email" name="Email" type="email" placeholder="your.email@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input id="subject" name="Subject" type="text" placeholder="What's this about?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="Message" rows="6" placeholder="Tell me about your project or question..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
                 </form>
-                <br>
+                
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-detail">
+                        <strong>Email:</strong> hadi@profetix.com
+                    </div>
+                    <div class="contact-detail">
+                        <strong>Location:</strong> Toronto, Canada
+                    </div>
+                    <div class="contact-detail">
+                        <strong>Response Time:</strong> Within 24-48 hours
+                    </div>
+                </div>
             </div>
         </section>
+    </main>
+    
     <footer> 
-        <p>&copy; 2025 Hadi's Page</p>
+        <p>&copy; 2025 Abdul Moeed Hadi | Web Developer Portfolio</p>
+        <p class="footer-links">
+            <a href="#about">About</a> | 
+            <a href="#projects">Projects</a> | 
+            <a href="#skills">Skills</a> | 
+            <a href="#contact">Contact</a>
+        </p>
     </footer>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
