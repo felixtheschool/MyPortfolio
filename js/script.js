@@ -1,3 +1,9 @@
+/**
+ * Portfolio Interactive Features
+ * Author: Abdul Moeed Hadi
+ * Features: Smooth scrolling, dark mode, project filtering, form validation
+ */
+
 // Smooth Scrolling for Navigation Links
 document.addEventListener('DOMContentLoaded', function() {
     // Smooth scrolling
