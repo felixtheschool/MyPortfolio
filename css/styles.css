@@ -400,6 +400,10 @@ section p {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
+.submit-btn:active {
+  transform: translateY(-1px);
+}
+
 .contact-info {
   background: rgba(255, 255, 255, 0.05);
   padding: 2rem;
