@@ -499,6 +499,18 @@ footer {
 }
 
 /* Responsive Design */
+/* Tablet Responsive Design */
+@media (max-width: 1024px) {
+  main {
+    padding: 1.5rem 1rem 100px 1rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+/* Mobile Responsive Design */
 @media (max-width: 768px) {
   .header-title {
     font-size: 1.8rem;
